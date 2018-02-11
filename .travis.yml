@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - '8'
+cache:
+  directories:
+    - node_modules
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
+  region: us-east-1
+  app: micro-frontends
+  env: skipper
+  bucket_name: microfrontends
+  on:
+    branch: master
+    repo: vuza/micro-frontends-skipper
+notifications:
+  email: false

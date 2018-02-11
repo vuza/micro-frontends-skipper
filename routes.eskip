@@ -1,0 +1,3 @@
+loginCommand: Path("/login/api/login") -> setPath("/api/login") -> "http://localhost:8070";
+appIndex: Path("/") -> setPath("/index") -> "http://localhost:3000";
+default: Path("*") -> "http://localhost:3000";
