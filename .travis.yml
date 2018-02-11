@@ -1,5 +1,8 @@
-services:
-  - docker
+# sudo: required
+# services:
+#   - docker
+install:
+  - true
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY
