@@ -1,0 +1,17 @@
+{
+  "name": "skipper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified but that's fine\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuza/micro-frontends-skipper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vuza/micro-frontends-skipper/issues"
+  },
+  "homepage": "https://github.com/vuza/micro-frontends-skipper#readme"
+}

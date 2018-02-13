@@ -1,0 +1,7 @@
+version: '2'
+services:
+  skipper:
+    build: .
+    ports:
+      - "9090:9090"
+    command: "skipper -routes-file routes.local.eskip"

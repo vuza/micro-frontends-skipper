@@ -1,8 +1,6 @@
-# sudo: required
-# services:
-#   - docker
-install:
-  - true
+language: node_js
+node_js:
+  - '6'
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY
