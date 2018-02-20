@@ -1,5 +1,7 @@
 loginCommand: Path("/user/api/login") -> setPath("/api/login") -> "http://user-mf.us-east-1.elasticbeanstalk.com";
 logoutCommand: Path("/user/api/logout") -> setPath("/api/logout") -> "http://user-mf.us-east-1.elasticbeanstalk.com";
+getUserCommand: Path("/user/api/user/*token") -> modPath("^/user", "") -> "http://user-mf.us-east-1.elasticbeanstalk.com";
+
 
 appIndex: Path("/") -> setPath("/index") -> "http://tailor.us-east-1.elasticbeanstalk.com";
 default: Path("*") -> "http://tailor.us-east-1.elasticbeanstalk.com";
